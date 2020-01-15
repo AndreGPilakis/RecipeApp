@@ -23,6 +23,7 @@ const getRecipes = async () =>{
 
   setRecipes(data.hits);
   console.log(data.hits);
+  console.log("my changes");
 }
 
 //Updates search with the events target, which is the text field.
