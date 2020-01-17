@@ -47,14 +47,18 @@ return(
         search
         </button> 
     </form>
+    <div className="recipes">
     {recipes.map(recipe => (
       //We use recipe.recipe because the array is the same name as our var.
       <Recipe 
       key={recipe.recipe.label}
       title={recipe.recipe.label} 
       calories={recipe.recipe.calories} 
-      image={recipe.recipe.image}/>
+      image={recipe.recipe.image}
+      ingredients={recipe.recipe.ingredients}
+      />
     ))};
+    </div>
   </div>
   );
 };
